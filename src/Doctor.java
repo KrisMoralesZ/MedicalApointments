@@ -3,8 +3,10 @@ public class Doctor {
   String name;
   String specialization;
 
-  Doctor() {
+  Doctor(String name, String specialization) {
     id++;
+    this.name = name;
+    this.specialization = specialization;
   }
 
   public void showName() {
