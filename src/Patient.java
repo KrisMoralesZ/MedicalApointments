@@ -1,57 +1,12 @@
-public class Patient {
+public class Patient extends User{
 
-  int id;
-  private String name;
-  private String email;
-  private String address;
-  private String phoneNumber;
   private String birthday;
   private double weight;
   private double height;
   private String blood;
 
   Patient(String name, String email) {
-    this.name = name;
-    this.email = email;
-  }
-
-  public void setId(int id) {
-    this.id = id;
-  }
-  public int getId() {
-    return id;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-  public String getName() {
-    return name;
-  }
-
-  public void setEmail(String email) {
-    this.email = email;
-  }
-  public String getEmail() {
-    return email;
-  }
-
-  public void setAddress(String address) {
-    this.address = address;
-  }
-  public String getAddress() {
-    return address;
-  }
-
-  public void setPhoneNumber(String phoneNumber) {
-    if (phoneNumber.length() == 10) {
-      this.phoneNumber = phoneNumber;
-    }else {
-      System.out.println("Invalid phone number");
-    }
-  }
-  public String getPhoneNumber() {
-    return phoneNumber;
+    super(name, email);
   }
 
   public void setBirthday(String birthday) {
@@ -81,6 +36,4 @@ public class Patient {
   public String getBlood() {
     return blood;
   }
-
-
 }
