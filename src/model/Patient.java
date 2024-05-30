@@ -1,4 +1,4 @@
-package models;
+package model;
 
 public class Patient extends User {
   private String birthday;

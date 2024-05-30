@@ -1,8 +1,9 @@
-package models;
+package model;
 
 import java.util.Date;
 
-public class AppointmentDoctor implements ISchedulable {
+
+public class AppointmentDoctor implements IScheduleAble {
   private int id;
   private Patient patient;
   private Doctor doctor;
