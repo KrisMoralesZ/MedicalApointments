@@ -1,5 +1,6 @@
-public class Patient extends User{
+package models;
 
+public class Patient extends User {
   private String birthday;
   private double weight;
   private double height;
@@ -12,6 +13,7 @@ public class Patient extends User{
   public void setBirthday(String birthday) {
     this.birthday = birthday;
   }
+
   public String getBirthday() {
     return birthday;
   }
@@ -19,13 +21,15 @@ public class Patient extends User{
   public void setWeight(double weight) {
     this.weight = weight;
   }
-  public String  getWeight() {
+
+  public String getWeight() {
     return Double.toString(weight);
   }
 
   public void setHeight(double height) {
     this.height = height;
   }
+
   public double getHeight() {
     return height;
   }
@@ -33,7 +37,13 @@ public class Patient extends User{
   public void setBlood(String blood) {
     this.blood = blood;
   }
+
   public String getBlood() {
     return blood;
   }
-}
+
+  @Override
+    public String toString() {
+        return super.toString() + "\nAge: " + birthday + "\n Weight: " +getWeight()+ "\n Height"+getHeight()+"\nBlood"+blood;
+  };
+};

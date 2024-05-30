@@ -1,7 +1,9 @@
+package models;
+
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor extends User{
+public class Doctor extends User {
   private String specialization;
 
   Doctor(String name, String email) {
@@ -9,11 +11,11 @@ public class Doctor extends User{
     System.out.println("The assigned Doctor Name is: " + name);
   }
 
-  public void setSpecialization(String specialization){
+  public void setSpecialization(String specialization) {
     this.specialization = specialization;
   }
 
-  public String getSpecialization(){
+  public String getSpecialization() {
     return specialization;
   }
 
@@ -60,6 +62,10 @@ public class Doctor extends User{
     public void setTime(String time) {
       this.time = time;
     }
-  }
 
+    @Override
+    public String toString() {
+      return "Available Appointments \nDate: " + date + "\nTime: " + time;
+    }
+  }
 }
