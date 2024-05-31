@@ -28,7 +28,7 @@ public class UIMenu {
 
   public static void showMenu(){
     System.out.println("Welcome to My Appointments");
-    System.out.println("Select the selected option");
+    System.out.println("Select an option");
 
     int response = 0;
     do {
